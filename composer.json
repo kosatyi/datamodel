@@ -3,6 +3,7 @@
     "description": "",
     "homepage": "https://kosatyi.com/datamodel/",
     "license": "MIT",
+    "version":"v0.0.1",
     "authors": [
         {
             "name": "Stepan Kosatyi",
