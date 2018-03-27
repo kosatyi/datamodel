@@ -40,7 +40,7 @@ class Model implements \JsonSerializable, \Serializable
      * @param $path
      * @return array|mixed|strlen
      */
-    private function path($path)
+    protected function path($path)
     {
         $parts = array_filter(explode(static::SEPARATOR, (string)$path), 'strlen');
         $parts = array_reduce($parts, function ($a, $v) {
