@@ -1,6 +1,6 @@
 # DataModel
 
-PHP data serving class
+PHP data access and serving class
 
 <p align="center">
 <a href="https://packagist.org/packages/kosatyi/datamodel"><img src="https://poser.pugx.org/kosatyi/datamodel/version" /></a>

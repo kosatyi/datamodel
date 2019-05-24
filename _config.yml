@@ -19,7 +19,7 @@ navigation: false
 projects: true
 
 title: DataModel
-description:
+description: PHP data access and serving class
 
 author:
   name: Stepan Kosatyi
