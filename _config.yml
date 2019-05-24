@@ -1,0 +1,26 @@
+plugins:
+  - jekyll-seo-tag
+
+port: 4001
+
+styles:
+
+remote_theme: kosatyi/sjt
+
+exclude:
+  - vendor
+
+javascript:
+
+baseurl: /datamodel
+
+navigation: false
+
+title: DataModel
+description:
+
+author:
+  name: Stepan Kosatyi
+  url: http://www.kosatyi.com/
+
+toolbar:
