@@ -16,6 +16,8 @@ baseurl: /datamodel
 
 navigation: false
 
+projects: true
+
 title: DataModel
 description:
 
