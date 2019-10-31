@@ -1,23 +1,23 @@
 {
-    "name": "kosatyi/datamodel",
-    "description": "",
-    "homepage": "https://kosatyi.com/datamodel/",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Stepan Kosatyi",
-            "email": "stepan@kosatyi.com"
-        }
-    ],
-    "require": {
-
-    },
-    "require-dev": {
-
-    },
-    "autoload": {
-        "psr-4": {
-            "Kosatyi\\DataModel\\": "src/"
-        }
+  "name": "kosatyi/datamodel",
+  "description": "",
+  "homepage": "https://kosatyi.com/datamodel/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stepan Kosatyi",
+      "email": "stepan@kosatyi.com"
     }
+  ],
+  "require": {
+    "ext-json": "*",
+    "ext-ctype": "*"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Kosatyi\\DataModel\\": "src/"
+    }
+  }
 }

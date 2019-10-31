@@ -2,13 +2,15 @@
 
 namespace Kosatyi\DataModel;
 
+use JsonSerializable;
+use Serializable;
+
 /**
  * Class Model
  * @package Kosatyi\DataModel
  */
-class Model implements \JsonSerializable, \Serializable
+class Model implements JsonSerializable, Serializable
 {
-
     /**
      *
      */
@@ -28,6 +30,11 @@ class Model implements \JsonSerializable, \Serializable
 
     }
 
+    public function __isset($name)
+    {
+
+    }
+
     /**
      * @param $key
      */
@@ -38,13 +45,13 @@ class Model implements \JsonSerializable, \Serializable
 
     /**
      * @param $path
-     * @return array|mixed|strlen
+     * @return array|mixed
      */
     protected function path($path)
     {
         $parts = array_filter(explode(static::SEPARATOR, (string)$path), 'strlen');
-        $parts = array_reduce($parts, function ($a, $v) {
-            $a[] = ctype_digit($v) ? intval($v) : $v;
+        $parts = array_reduce($parts, static function ($a, $v) {
+            $a[] = ctype_digit($v) ? (int)$v : $v;
             return $a;
         }, []);
         return $parts;
@@ -60,7 +67,7 @@ class Model implements \JsonSerializable, \Serializable
         if (is_string($keys)) {
             $keys = $this->path($keys);
         }
-        if (is_null($value)) {
+        if ($value === null) {
             $copy = $this->__data__;
         } else {
             $copy =& $this->__data__;
@@ -79,7 +86,7 @@ class Model implements \JsonSerializable, \Serializable
                 $copy =& $copy[$key];
             }
         }
-        if (is_null($value)) {
+        if ($value === null) {
             return $copy;
         }
         if (is_callable($copy)) {
