@@ -1,23 +1,9 @@
-plugins:
-  - jekyll-seo-tag
-
-port: 4001
-
-styles:
-
 remote_theme: kosatyi/sjt
 
-exclude:
-  - vendor
-  - src
-
-javascript:
-
-baseurl: /datamodel
-
 navigation: false
-
 projects: true
+
+baseurl: /blogger-php
 
 brand: datamodel
 title: DataModel
@@ -25,6 +11,4 @@ description: PHP data access and serving class
 
 author:
   name: Stepan Kosatyi
-  url: http://www.kosatyi.com/
-
-toolbar:
+  url: https://kosatyi.com/
