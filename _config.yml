@@ -22,6 +22,7 @@ projects: true
 brand: datamodel
 title: DataModel
 description: PHP data access and serving class
+analytics: UA-37629144-1
 
 author:
   name: Stepan Kosatyi
