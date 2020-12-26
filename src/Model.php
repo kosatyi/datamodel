@@ -60,7 +60,7 @@ class Model implements Iterator, JsonSerializable, Serializable
      */
     public function current()
     {
-        return $this->create($this->__data__[$this->position], $this->position);
+        return $this->nested($this->__data__[$this->position], $this->position);
     }
 
     /**
@@ -139,7 +139,7 @@ class Model implements Iterator, JsonSerializable, Serializable
      * @param array $keys
      * @return mixed
      */
-    public function create($object = [], $keys = [])
+    public function nested($object = [], $keys = [])
     {
         return new $this($object, $this, $keys);
     }
@@ -201,7 +201,7 @@ class Model implements Iterator, JsonSerializable, Serializable
             }
         }
         if ($value === null) {
-            return $this->create($copy, $path);
+            return $this->nested($copy, $path);
         }
         if (is_callable($copy)) {
             $copy($value);
@@ -356,5 +356,4 @@ class Model implements Iterator, JsonSerializable, Serializable
         }
         return $this->data($data);
     }
-
 }
