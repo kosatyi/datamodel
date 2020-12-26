@@ -4,3 +4,4 @@ examples
 _site
 tests/report
 tests/logs
+index.php
