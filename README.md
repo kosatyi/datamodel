@@ -24,7 +24,7 @@ you should use either the `attr` method
             'prop2'=> 'value2' 
         ]
     ]);
-    echo $model->attr('prop');
+    echo $model->attr('prop1');
     echo $model->attr('list.0');
     echo $model->attr('map.prop1');
     $model->attr('list.1','item1-changed');
