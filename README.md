@@ -31,3 +31,4 @@ you should use either the `attr` method
     $model->attr('prop','value-changed');
     $model->attr('map.prop2','value2');
 ```
+
