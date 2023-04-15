@@ -8,7 +8,8 @@ remote_theme: kosatyi/sjt
 navigation: false
 projects: true
 
-baseurl: /blogger-php
+url: https://kosatyi.com
+baseurl: /datamodel
 
 brand: datamodel
 title: DataModel
